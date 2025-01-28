@@ -35,7 +35,10 @@ h3 {
 nav {
     background-color: #f3f3f3;
     font-weight: bold;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
 }
 
 nav a {
