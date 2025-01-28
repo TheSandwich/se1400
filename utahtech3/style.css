@@ -35,10 +35,7 @@ h3 {
 nav {
     background-color: #f3f3f3;
     font-weight: bold;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
 }
 
 nav a {
@@ -46,8 +43,7 @@ nav a {
 }
 
 main {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
 }
 
 #homehero {
@@ -98,7 +94,7 @@ footer{
     width:80%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
