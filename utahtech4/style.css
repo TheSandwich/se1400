@@ -143,6 +143,8 @@ footer{
     font-family: italic;
     text-align: center;
     padding: 1rem;
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
 }
 
 #wrapper {
