@@ -1,4 +1,29 @@
 .wrapper {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Identifying and Coloring Each Grid Child */
+.sidebar {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background: rgba(255, 0, 0, 0.3); /* Red */
+    padding: 20px;
+}
+
+.content {
+    grid-column: 3 / 7;
+    grid-row: 1;
+    background: rgba(0, 255, 0, 0.3); /* Green */
+    padding: 20px;
+}
+
+.extra {
+    grid-column: 7 / 8;
+    grid-row: 1;
+    background: rgba(0, 0, 255, 0.3); /* Blue */
+    padding: 20px;
 }
