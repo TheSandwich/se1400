@@ -33,7 +33,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Grid Container */
+/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
@@ -41,41 +41,55 @@ nav ul li a {
     padding: 1rem;
 }
 
-/* Left Sidebar */
+/* Grid Items - Colored Sections */
+.left-sidebar, .right-sidebar, main, .row2, .row3, .row4, footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Assigning Grid Positions & Colors */
 .left-sidebar {
-    background-color: #e0e0e0;
-    padding: 1rem;
+    background-color: rgba(255, 0, 0, 0.3);
     grid-column: 2 / 3;
     grid-row: 1 / span 4;
+    height: 200px;
 }
 
-/* Main Content */
 main {
-    background-color: white;
-    padding: 1rem;
+    background-color: rgba(0, 255, 0, 0.3);
     grid-column: 3 / 7;
+    height: 200px;
 }
 
-/* Right Sidebar */
 .right-sidebar {
-    background-color: #e0e0e0;
-    padding: 1rem;
+    background-color: rgba(0, 0, 255, 0.3);
     grid-column: 7 / 8;
     grid-row: 1 / span 4;
+    height: 200px;
 }
 
-/* Additional Rows */
-.row2, .row3, .row4 {
-    background-color: #eaeaea;
-    padding: 1rem;
+.row2 {
+    background-color: rgba(255, 255, 0, 0.3);
     grid-column: 3 / 7;
+    height: 150px;
 }
 
-/* Footer */
+.row3 {
+    background-color: rgba(255, 165, 0, 0.3);
+    grid-column: 3 / 7;
+    height: 150px;
+}
+
+.row4 {
+    background-color: rgba(128, 0, 128, 0.3);
+    grid-column: 3 / 7;
+    height: 150px;
+}
+
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
     grid-column: 1 / -1;
+    height: 100px;
 }
