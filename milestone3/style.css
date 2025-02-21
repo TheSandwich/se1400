@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: contents;
+}
+
+.column {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
