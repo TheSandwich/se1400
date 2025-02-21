@@ -9,87 +9,69 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 /* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr auto; /* Defines 5 rows */
     gap: 1rem;
     padding: 1rem;
 }
 
-/* Grid Items - Colored Sections */
-.left-sidebar, .right-sidebar, main, .row2, .row3, .row4, footer {
-    text-align: center;
+/* Header */
+header {
+    background-color: rgba(50, 50, 50, 0.3);
+    grid-column: 1 / -1; /* Spans all columns */
+    grid-row: 1 / 2;
     padding: 20px;
-    color: white;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.5em;
 }
 
-/* Assigning Grid Positions & Colors */
+/* Left Sidebar - Stays in Column 1, Spans 3 Rows */
 .left-sidebar {
     background-color: rgba(255, 0, 0, 0.3);
-    grid-column: 2 / 3;
-    grid-row: 1 / 5;
-    height: auto;
+    grid-column: 2 / 3; 
+    grid-row: 2 / 5; /* Extends to Row 4 */
+    padding: 20px;
 }
 
+/* Main Content - Stays in Column 2, Spans 3 Rows */
 main {
     background-color: rgba(0, 255, 0, 0.3);
-    grid-column: 3 / 7;
-    height: 200px;
+    grid-column: 3 / 7; /* Stays in middle columns */
+    grid-row: 2 / 5;
+    padding: 20px;
 }
 
+/* Right Sidebar - Stays in Column 3, Spans 3 Rows */
 .right-sidebar {
     background-color: rgba(0, 0, 255, 0.3);
     grid-column: 7 / 8;
-    grid-row: 1 / 5;
-    height: auto;
+    grid-row: 2 / 5; /* Extends to Row 4 */
+    padding: 20px;
 }
 
+/* Additional Rows */
 .row2 {
     background-color: rgba(255, 255, 0, 0.3);
     grid-column: 3 / 7;
-    height: 150px;
+    grid-row: 3 / 4;
+    padding: 20px;
 }
 
 .row3 {
     background-color: rgba(255, 165, 0, 0.3);
     grid-column: 3 / 7;
-    height: 150px;
+    grid-row: 4 / 5;
+    padding: 20px;
 }
 
-.row4 {
-    background-color: rgba(128, 0, 128, 0.3);
-    grid-column: 3 / 7;
-    height: 150px;
-}
-
+/* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.3);
-    grid-column: 1 / -1;
-    height: 100px;
+    grid-column: 1 / -1; /* Spans all columns */
+    grid-row: 5 / 6;
+    padding: 20px;
+    text-align: center;
 }
