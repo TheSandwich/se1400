@@ -63,6 +63,13 @@ main {
     height: 200px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); /* ✅ Grid Columns Defined */
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .right-sidebar {
     background-color: rgba(0, 0, 255, 0.3);
     grid-column: 7 / 8;
