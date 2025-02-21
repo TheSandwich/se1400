@@ -21,7 +21,27 @@ body {
 }
 
 .column {
-    background-color: #f4f4f4;
     padding: 20px;
     border: 1px solid #ddd;
+    height: 100px;
+}
+
+.column:nth-child(1) {
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-column: 2 / span 2;
+}
+
+.column:nth-child(2) {
+    background-color: rgba(0, 255, 0, 0.3);
+    grid-column: 4 / span 2;
+}
+
+.column:nth-child(3) {
+    background-color: rgba(0, 0, 255, 0.3);
+    grid-column: 2 / span 3;
+}
+
+.column:nth-child(4) {
+    background-color: rgba(255, 255, 0, 0.3);
+    grid-column: 5 / span 2;
 }
