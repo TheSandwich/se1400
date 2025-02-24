@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>Red Rock Tacos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
-    </nav>
-
-    <main>
-        <article class="content">Column 1 Content</article>
-        <article class="content">Column 2 Content</article>
-        <article class="content">Column 3 Content</article>
-    </main>
-
-    <section>
-        <h2>Additional Section</h2>
-        <p>Content spanning all three columns.</p>
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>RED ROCK <br> TACOS</h1>
+            <h2>SAVORY DELIGHTS</h2>
+            <button class="cta-button">ORDER NOW</button>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
+
+    <section class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h3>About Us:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui.</p>
+            </div>
+            <div class="about-image">
+                <img src="tacos.jpg" alt="Navajo Tacos">
+                <p><strong>Navajo Tacos</strong> – Golden fry bread topped with savory seasoned ground beef, fresh lettuce, diced tomatoes, shredded cheese, and a dollop of sour cream.</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
