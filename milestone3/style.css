@@ -9,10 +9,14 @@
 body {
     background-color: #111;
     color: white;
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 10px;
 }
 
 /* Header and Navigation */
 header {
+    grid-column: 1 / -1;
     background-color: #6a1b9a;
     padding: 10px 20px;
 }
@@ -21,6 +25,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 nav ul {
@@ -45,8 +50,18 @@ nav ul li a {
     color: white;
 }
 
+/* Grid Layout for Content */
+.wrapper {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
 /* Hero Section */
 .hero {
+    grid-column: 2 / 8;
     background: url('hero-image.jpg') center/cover no-repeat;
     height: 400px;
     position: relative;
@@ -89,25 +104,19 @@ nav ul li a {
 
 /* About Section */
 .about {
+    grid-column: 2 / 8;
     background-color: rgba(0, 255, 0, 0.2);
     padding: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.about-content {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 .about-text {
-    width: 50%;
+    padding: 20px;
 }
 
 .about-image {
-    width: 40%;
     text-align: center;
 }
 
@@ -115,4 +124,13 @@ nav ul li a {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    grid-column: 1 / -1;
+    background-color: rgba(128, 0, 128, 0.3);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
