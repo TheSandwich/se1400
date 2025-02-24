@@ -8,56 +8,70 @@
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr); /* 3 main columns + extra spacing */
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
     gap: 10px;
     min-height: 100vh;
     padding: 10px;
+    background-color: #f0f0f0;
 }
 
-/* Header */
+/* Identifying grid children with semi-transparent colors */
 header {
-    grid-column: 1 / -1; /* Spans the entire width */
-    background-color: #4CAF50;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: rgba(255, 0, 0, 0.3); /* Red */
     color: white;
     text-align: center;
     padding: 20px;
+    height: 80px;
 }
 
-/* Navigation */
 nav {
-    grid-column: 1 / -1; /* Spans the entire width */
-    background-color: #f4f4f4;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    background-color: rgba(0, 255, 0, 0.3); /* Green */
     padding: 15px;
     text-align: center;
+    height: 60px;
 }
 
-/* Main Content Area */
 main {
-    grid-column: 2 / 8; /* Centering the main content within the 6 middle columns */
+    grid-column: 2 / 8;
+    grid-row: 3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns inside the main section */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+    padding: 20px;
+    height: 250px;
 }
 
 .content {
-    background-color: #ddd;
+    background-color: rgba(255, 255, 0, 0.3); /* Yellow */
     padding: 20px;
     text-align: center;
 }
 
-/* Additional Section */
 section {
-    grid-column: 2 / 8; /* Centering section across the 6 middle columns */
-    background-color: #eee;
+    grid-column: 2 / 8;
+    grid-row: 4;
+    background-color: rgba(255, 165, 0, 0.3); /* Orange */
     padding: 15px;
     text-align: center;
+    height: 100px;
 }
 
-/* Footer */
 footer {
-    grid-column: 1 / -1; /* Spans the entire width */
-    background-color: #222;
+    grid-column: 1 / -1;
+    grid-row: 5;
+    background-color: rgba(128, 0, 128, 0.3); /* Purple */
     color: white;
     text-align: center;
     padding: 15px;
+    height: 80px;
+}
+
+/* Ensuring visibility of grid structure */
+body > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
