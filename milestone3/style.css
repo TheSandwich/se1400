@@ -14,40 +14,20 @@ body {
     gap: 10px;
 }
 
-/* Header and Navigation */
+/* Header */
 header {
     grid-column: 1 / -1;
-    background-color: #6a1b9a;
-    padding: 10px 20px;
+    background-color: rgba(255, 0, 0, 0.3); /* Red */
+    text-align: center;
+    padding: 20px;
 }
 
+/* Navigation */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.brand {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 255, 0, 0.3); /* Green */
+    text-align: center;
+    padding: 15px;
 }
 
 /* Grid Layout for Content */
@@ -68,6 +48,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 255, 0.3); /* Blue */
 }
 
 .hero-overlay {
@@ -105,7 +86,7 @@ nav ul li a {
 /* About Section */
 .about {
     grid-column: 2 / 8;
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: rgba(255, 165, 0, 0.3); /* Orange */
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -114,10 +95,12 @@ nav ul li a {
 
 .about-text {
     padding: 20px;
+    background-color: rgba(255, 255, 0, 0.3); /* Yellow */
 }
 
 .about-image {
     text-align: center;
+    background-color: rgba(0, 255, 255, 0.3); /* Cyan */
 }
 
 .about-image img {
@@ -129,7 +112,7 @@ nav ul li a {
 /* Footer */
 footer {
     grid-column: 1 / -1;
-    background-color: rgba(128, 0, 128, 0.3);
+    background-color: rgba(128, 0, 128, 0.3); /* Purple */
     text-align: center;
     padding: 15px;
     margin-top: 20px;
