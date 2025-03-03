@@ -1,0 +1,119 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 10px;
+}
+
+/* Header */
+header {
+    grid-column: 1 / -1;
+    background-color: rgba(255, 0, 0, 0.3); /* Red */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 255, 0, 0.3); /* Green */
+    text-align: center;
+    padding: 15px;
+}
+
+/* Grid Layout for Content */
+.wrapper {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    grid-column: 2 / 8;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff5733;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.cta-button {
+    margin-top: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* About Section */
+.about {
+    grid-column: 2 / 8;
+    background-color: rgba(255, 165, 0, 0.3); /* Orange */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.about-text {
+    padding: 20px;
+    background-color: rgba(255, 255, 0, 0.3); /* Yellow */
+}
+
+.about-image {
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.3); /* Cyan */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    grid-column: 1 / -1;
+    background-color: rgba(128, 0, 128, 0.3); /* Purple */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
