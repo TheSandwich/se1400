@@ -139,8 +139,13 @@ label {
 }
 
 #alumnihero {
-    background: url('alumnihero.jpg') no-repeat center center;
+    height: 300px;
+    background-image: url('homehero.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
 }
 
 #homehero {
@@ -218,7 +223,7 @@ footer{
         flex-flow: column nowrap;
     }
 
-    #homehero, #studenthero, #facultyhero {
+    #homehero, #studenthero, #facultyhero, #alumnihero {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
         height: auto;
@@ -243,7 +248,7 @@ footer{
         grid-column: 1 / -1;
     }
 
-    #homehero, #studenthero, #facultyhero {
+    #homehero, #studenthero, #facultyhero, #alumnihero {
         display: none;
     }
 }
