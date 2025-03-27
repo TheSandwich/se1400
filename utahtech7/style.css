@@ -107,11 +107,6 @@ main img{
     padding-left: 2rem;
 }
 
-.students-page main img {
-    float: right;
-    padding-left: 2rem;
-}
-
 
 form {
     display: grid;
@@ -244,7 +239,7 @@ table {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     nav {
         grid-row: 2 / 3;
         grid-column: 1 / 5;
