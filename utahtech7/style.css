@@ -107,6 +107,12 @@ main img{
     padding-left: 2rem;
 }
 
+.students-page main img {
+    float: right;
+    padding-left: 2rem;
+}
+
+
 form {
     display: grid;
     grid-template-rows: auto;
