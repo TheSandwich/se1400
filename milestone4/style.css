@@ -6,6 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
 /* Header */
 header {
     display: flex;
@@ -45,6 +50,13 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
+/* Main Grid Layout */
+.main-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 70px; /* to prevent header overlap */
+}
+
 /* Hero Section */
 .hero {
     background: url('grill.jpg') center/cover no-repeat;
@@ -54,7 +66,6 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     color: white;
-    position: relative;
 }
 
 .hero-text {
@@ -87,16 +98,16 @@ nav ul li a:hover {
     background: #FFC107;
 }
 
-/* About & Menu Section */
+/* About & Menu Section using CSS Grid */
 .about-menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     padding: 50px;
     background: #E0E0E0;
-    justify-content: space-around;
 }
 
 .about, .menu {
-    width: 45%;
     background: white;
     padding: 20px;
     border-radius: 5px;
@@ -117,4 +128,21 @@ nav ul li a:hover {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .about-menu {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
