@@ -249,11 +249,6 @@ table {
         flex-flow: column nowrap;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero {
-        grid-row: 2 / 3;
-        grid-column: 5 / 8;
-        height: auto;
-    }
 
     main img {
         float: none;
