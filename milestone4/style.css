@@ -60,6 +60,8 @@ nav a:hover {
 
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.6);
+    grid-column: 1 / 6;
+    grid-row: 2 /3; 
     padding: 50px;
     text-align: center;
     border-radius: 10px;
