@@ -26,7 +26,6 @@ nav ul {
     list-style: none;
     display: flex;
     margin-left: 20%;
-    justify-content: flex-end;
     gap: 1rem;
     margin: 0;
     padding: 0;
