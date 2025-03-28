@@ -44,7 +44,7 @@ nav a:hover {
 .main-grid {
     grid-column: 2 / 8;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-row: 2 / 8;
     gap: 40px;
     margin-top: 20px;
 }
@@ -61,7 +61,7 @@ nav a:hover {
 .hero-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     grid-column: 1 / 6;
-    grid-row: 2 /3; 
+    grid-row: 2 / 3; 
     padding: 50px;
     text-align: center;
     border-radius: 10px;
