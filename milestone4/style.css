@@ -115,6 +115,7 @@ header h1 {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 148px;
 }
 
 .cta-button:hover {
