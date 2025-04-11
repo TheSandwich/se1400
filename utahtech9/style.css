@@ -198,6 +198,25 @@ label {
 
 }
 
+#shophero {
+    height: 300px;
+    background-image: url(images/shophero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+}
+
+#shoppingcart {
+    margin-top: 2rem;
+}
+  
+  #shoppingcart img {
+    width: 100%;
+    height: auto;
+  }
+
 dt {
     color: #003058;
     font-weight: bold;
@@ -258,8 +277,8 @@ table {
 @media only screen and (max-width: 900px) {
     nav {
         grid-row: 2 / 3;
-        grid-column: 1 / 5;
-        position: static;
+        grid-column: 5 / 8;
+        position: auto;
     }
 
     nav ul {
@@ -267,6 +286,12 @@ table {
     }
 
     #homehero, #studenthero, #facultyhero, #alumnihero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
+    #shophero {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
         height: auto;
@@ -287,6 +312,10 @@ table {
     }
 
     #homehero, #studenthero, #facultyhero, #alumnihero {
+        display: none;
+    }
+
+    #shophero {
         display: none;
     }
 }
