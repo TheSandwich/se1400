@@ -299,8 +299,6 @@ table {
     }
 }
 
-
-
 @media only screen and (max-width: 600px) {
     header h1 {
         background-image: none;
