@@ -200,7 +200,7 @@ label {
 
 #shophero {
     height: 300px;
-    background-image: url(images/shophero.jpg);
+    background-image: url(shophero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,12 +210,15 @@ label {
 
 #shoppingcart {
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
-  
-  #shoppingcart img {
+
+#shoppingcart img {
     width: 100%;
     height: auto;
-  }
+}
 
 dt {
     color: #003058;
@@ -285,20 +288,18 @@ table {
         flex-flow: column nowrap;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero {
+    #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
         height: auto;
     }
 
-    #shophero {
-        grid-row: 2 / 3;
-        grid-column: 5 / 8;
-        height: auto;
+    #shoppingcart {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
+
+
 
 @media only screen and (max-width: 600px) {
     header h1 {
@@ -311,11 +312,10 @@ table {
         grid-column: 1 / -1;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero {
+    #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
         display: none;
     }
-
-    #shophero {
-        display: none;
+    #shoppingcart {
+        grid-template-columns: 1fr;
     }
 }
