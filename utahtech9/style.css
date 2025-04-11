@@ -206,20 +206,19 @@ label {
     background-position: center;
     grid-row: 3 / 4;
     grid-column: 1 / -1;
-  grid-column: 2 / 4;
+
 }
 
-#shoppingcart img {
+#shoppingcart img{
     width: 100%;
     height: auto;
-  }
-  
-  #shoppingcart {
+}
+
+#shoppingcart {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
+}
+
 dt {
     color: #003058;
     font-weight: bold;
@@ -280,23 +279,30 @@ table {
 @media only screen and (max-width: 900px) {
     nav {
         grid-row: 2 / 3;
-        grid-column: 5 / 8;
-        position: auto;
+        grid-column: 1 / 5;
+        position: static;
     }
 
     nav ul {
         flex-flow: column nowrap;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
-        grid-row: 5 / 8;
-        grid-column: 2 / 3;
+    #homehero, #studenthero, #facultyhero, #alumnihero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
         height: auto;
     }
 
-    #shoppingcart {
+    #shophero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
+    #shoppingcart{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -310,10 +316,15 @@ table {
         grid-column: 1 / -1;
     }
 
-    #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
+    #homehero, #studenthero, #facultyhero, #alumnihero {
         display: none;
     }
-    #shoppingcart {
+
+    #shophero {
+        display: none;
+    }
+
+    #shoppingcart{
         grid-template-columns: 1fr;
     }
 }
