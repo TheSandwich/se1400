@@ -200,27 +200,26 @@ label {
 
 #shophero {
     height: 300px;
-    background-image: url(shophero.jpg);
+    background-image: url('shophero.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
-    grid-row: 2 / 9;
-    grid-column: 2 / 4;
-}
-
-#shoppingcart {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  grid-column: 2 / 4;
 }
 
 #shoppingcart img {
     width: 100%;
     height: auto;
-}
-
+  }
+  
+  #shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
 dt {
     color: #003058;
     font-weight: bold;
