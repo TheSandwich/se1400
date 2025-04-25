@@ -11,6 +11,16 @@
     color: white;
     overflow-x: hidden;
   }
+  #wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);  /* 8 equal-width columns */
+    grid-template-rows: repeat(6, auto);    /* 6 rows that grow with content */
+    gap: 0px;                               /* Space between items */
+    width: 100%;
+    max-width: 1515px;
+    margin: 0 auto;
+  }
+  
   
   /* NAVIGATION */
   .top-nav {
@@ -53,11 +63,21 @@
   .nav-left a:hover {
     color: #bea50a;
   }
+
+  .nav-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
   
   .logo {
-    height: 234%;
-    transform: scale(1.4);   /* Increase visual size */
-    transform-origin: left center;
+    height: 189px;              
+    width: auto;
+    display: block;
+    transform: none;     
   }
   
   .logo-wrapper {
@@ -77,6 +97,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    grid-column: 1 / 9; /* Spans all columns */
   }
   
   .hero-overlay {
@@ -130,6 +151,7 @@
   background-color: #111;
   color: #fff;
   text-align: center;
+  grid-column: 1 / 9; /* Spans all columns */
 }
 
 .intro-container {
@@ -223,6 +245,7 @@
   color: #fff;
   padding: 60px 20px 30px;
   font-size: 16px;
+  grid-column: 1 / 9; /* Spans all columns */
 }
 
 .footer-container {
@@ -271,3 +294,67 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* -----------------------------
+   VIEWPORT BELOW 992px
+------------------------------ */
+@media (max-width: 992px) {
+  #wrapper {
+    grid-template-columns: 1fr 768px 1fr;
+  }
+}
+
+/* -----------------------------
+   VIEWPORT BELOW 768px
+------------------------------ */
+@media (max-width: 768px) {
+  #wrapper {
+    grid-template-columns: 1fr; /* Only one column: full width */
+  }
+
+  /* Optional: Adjust paddings or text sizes here too */
+  .intro-container,
+  .hero-overlay,
+  .button-container,
+  .footer-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .button-container {
+    grid-template-columns: 1fr; /* Stack buttons vertically */
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  .nav-left {
+      position: fixed;
+      top: 0;
+      left: -100%; /* 🔥 Start off-screen */
+      height: 100vh;
+      width: 250px;
+      background-color: #111;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+      transition: left 0.3s ease; /* 🔄 Animate sliding in */
+      z-index: 999;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    .nav-left.show {
+      left: 0; /* 🔥 Slide into view */
+    }
+}

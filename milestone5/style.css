@@ -1,0 +1,360 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);  /* 8 equal-width columns */
+  grid-template-rows: repeat(6, auto);    /* 6 rows that grow with content */
+  gap: 0px;                               /* Space between items */
+  width: 100%;
+  max-width: 1515px;
+  margin: 0 auto;
+}
+
+
+/* NAVIGATION */
+.top-nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+  color: #bea50a;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  height: 189px;              
+  width: auto;
+  display: block;
+  transform: none;     
+}
+
+.logo-wrapper {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('images/kebab.webp') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-column: 1 / 9; /* Spans all columns */
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px;
+  border-radius: 0px;
+  text-align: center;
+
+  width: 80%;           /* Width relative to the page or parent */
+  max-width: 888px;     /* Prevents it from getting too wide */
+  height: auto;  
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+  /* CTA BUTTON */
+
+  .cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #bea50a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;     /* 🔥 This removes the underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+    .cta-button:hover {
+      background-color: #d62828; /* 🔥 Hover background color */
+      transform: scale(1.05);    /* Subtle grow on hover */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+/*introduction*/
+
+.introduction {
+padding: 0px 39px;
+background-color: #111;
+color: #fff;
+text-align: center;
+grid-column: 1 / 9; /* Spans all columns */
+}
+
+.intro-container {
+max-width: 1200px;
+margin: 0 auto;
+background-color: rgba(255, 255, 255, 0.08);
+padding: 40px;
+border-radius: 0px;
+
+display: grid;
+grid-template-columns: repeat(8, 1fr);  /* 8 equal columns */
+grid-template-rows: repeat(6, auto);    /* 6 rows that adjust to content */
+gap: 0px;
+}
+
+
+.introduction h2 {
+font-size: 32px;
+margin-bottom: 20px;
+color: #bea50a;
+}
+
+.introduction p {
+font-size: 18px;
+line-height: 1.6;
+margin-bottom: 20px;
+color: rgba(255, 255, 255, 0.85);
+grid-column: 3 / 7;
+}
+
+.intro-container h2 {
+grid-column: 3 / span 4;  /* Columns 1 to 4 */
+grid-row: 1;
+}
+
+.intro-container .subheading {
+grid-column: 1 / span 4;
+grid-row: 2;
+}
+
+.intro-container p:nth-of-type(1) {
+grid-column: 3 / span 4;
+}
+
+.intro-container p:nth-of-type(2) {
+grid-column: 1 / span 8;
+grid-row: 3;
+}
+
+.intro-container p:nth-of-type(3) {
+grid-column: 1 / span 8;
+grid-row: 4;
+}
+
+/*introduction actions*/
+
+.intro-actions {
+padding: 40px 20px;
+text-align: center;
+grid-column: 1 / 9;
+}
+
+.button-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.action-button {
+background-color: #bea50a;
+color: white;
+font-size: 16px;
+font-weight: bold;
+padding: 16px 24px;
+border-radius: 6px;
+text-decoration: none;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+background-color: #d62828;
+transform: scale(1.05);
+}
+
+/* footer */
+
+.site-footer {
+background-color: #111;
+color: #fff;
+padding: 60px 20px 30px;
+font-size: 16px;
+grid-column: 1 / 9; /* Spans all columns */
+}
+
+.footer-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-left h3 {
+font-size: 24px;
+color: #bea50a;
+margin-bottom: 10px;
+}
+
+.footer-right h4 {
+font-size: 18px;
+margin-bottom: 10px;
+color: #d62828;
+}
+
+.footer-right ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-right li {
+margin-bottom: 10px;
+}
+
+.footer-right a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+color: #bea50a;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 40px;
+font-size: 14px;
+color: rgba(255, 255, 255, 0.5);
+}
+
+/* -----------------------------
+ VIEWPORT BELOW 992px
+------------------------------ */
+@media (max-width: 992px) {
+#wrapper {
+  grid-template-columns: 1fr 768px 1fr;
+}
+}
+
+/* -----------------------------
+ VIEWPORT BELOW 768px
+------------------------------ */
+@media (max-width: 768px) {
+#wrapper {
+  grid-template-columns: 1fr; /* Only one column: full width */
+}
+
+/* Optional: Adjust paddings or text sizes here too */
+.intro-container,
+.hero-overlay,
+.button-container,
+.footer-container {
+  padding: 20px;
+  max-width: 100%;
+}
+
+.button-container {
+  grid-template-columns: 1fr; /* Stack buttons vertically */
+}
+
+.nav-toggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.nav-left {
+    position: fixed;
+    top: 0;
+    left: -100%; /* 🔥 Start off-screen */
+    height: 100vh;
+    width: 250px;
+    background-color: #111;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    transition: left 0.3s ease; /* 🔄 Animate sliding in */
+    z-index: 999;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .nav-left.show {
+    left: 0; /* 🔥 Slide into view */
+  }
+}
