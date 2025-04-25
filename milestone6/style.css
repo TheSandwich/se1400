@@ -240,6 +240,16 @@
 
 /* Story Section */
 
+.redrockhero {
+  height: 69vh;
+  background: url('images/redrock.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-column: 1 / 9; /* Spans all columns */
+}
+
 .about-title {
   font-size: 36px;
   font-weight: bold;
@@ -593,6 +603,64 @@
   font-size: 14px;
   color: #bbb;
 }
+
+.event-details {
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.event-details h3,
+.event-details h4 {
+  color: #bea50a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.event-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 40px auto;
+  margin-bottom: 60px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.event-photo {
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .event-gallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .event-photo {
+    width: 100%;
+  }
+}
+
+
 
 
 /* footer */
