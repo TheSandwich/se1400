@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story | Red Rock Tacos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- NAVIGATION -->
+    <header class="top-nav">
+      <div class="nav-container">
+        <ul class="nav-left">
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Book an Event</a></li>
+          <li><a href="time.html">Hours & Info</a></li>
+        </ul>
+        <div class="logo-wrapper">
+          <a href="index.html">
+            <img src="images/logocleanup.svg" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      </div>
+    </header>
+    <!-- STORY CONTENT -->
+    <section class="story-content">
+        <div class="intro-container">
+          <h2>Our Story</h2>
+          <p class="subheading">Rooted in the Southwest. Inspired by flavor.</p>
+          <p>
+            Red Rock Tacos was born out of a passion for flame, flavor, and community. Nestled near the red cliffs of Southern Utah, we set out to create a gathering place that celebrates the region's bold spirit and culinary traditions.
+          </p>
+          <p>
+            What started as a family recipe has grown into a full-fledged food destination — where guests enjoy mouthwatering kebabs, fire-grilled tacos, and fresh, locally sourced ingredients with every bite. Our name honors the rugged beauty of the landscape we call home.
+          </p>
+          <p>
+            More than just a restaurant, Red Rock Tacos is a vibe — rustic, energetic, and always delicious. Whether you're passing through or live nearby, we invite you to pull up a chair and become part of our story.
+          </p>
+        </div>
+      </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Red Rock Tacos</h3>
+          <p>Southwest flavor, grilled to perfection.</p>
+          <p>123 Desert Drive, St. George, UT</p>
+          <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+        </div>
+
+        <div class="footer-right">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="time.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Red Rock Tacos. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MOBILE NAV SCRIPT -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-left');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

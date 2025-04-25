@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Event | Red Rock Tacos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="wrapper">
+
+    <!-- NAVIGATION -->
+    <header class="top-nav">
+      <div class="nav-container">
+        <ul class="nav-left">
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Book an Event</a></li>
+          <li><a href="time.html">Hours & Info</a></li>
+        </ul>
+        <div class="logo-wrapper">
+          <a href="index.html">
+            <img src="images/logocleanup.svg" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      </div>
+    </header>
+
+    <section class="table-hero">
+      </section>
+
+    <!-- BOOK EVENT SECTION -->
+    <section class="event-section">
+      <div class="event-content center-text">
+        <h2 class="section-heading">Book an Event</h2>
+        <p>Planning a celebration, reunion, or private dinner?</p>
+        <p>We offer group-friendly indoor and outdoor seating, custom menus, and unforgettable Southwest hospitality.</p>
+        <p><strong>Fill out the form below</strong> and a member of our team will contact you shortly!</p>
+
+        <!-- EVENT FORM -->
+        <div class="event-form-wrapper">
+            <form class="event-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="date" name="event-date" required>
+            <input type="number" name="group-size" placeholder="Group Size" required>
+            <textarea name="message" placeholder="Tell us more about your event..." rows="5"></textarea>
+            <button type="submit" class="reservations.button">Submit Request</button>
+            </form>
+        </div>
+
+        <p class="event-alt-contact">Prefer to talk? Call us at <a href="tel:+11234567890">(123) 456-7890</a> or email <a href="mailto:events@redrocktacos.com">events@redrocktacos.com</a></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Red Rock Tacos</h3>
+          <p>Southwest flavor, grilled to perfection.</p>
+          <p>123 Desert Drive, St. George, UT</p>
+          <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+        </div>
+        <div class="footer-right">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="time.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Red Rock Tacos. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- MOBILE NAV SCRIPT -->
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-left');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
