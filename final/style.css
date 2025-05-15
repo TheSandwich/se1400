@@ -1,0 +1,104 @@
+/* Structual Elements Go Here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(8, minmax(0, 175px) minmax(0, 0fr) );
+}
+
+body {
+    background-color: #edeeef;
+    color: #555;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    grid-column: 2 / 3;
+    background-color: #edeeef;
+}
+
+main {
+    grid-column: 3 / -4;
+    background-color: #fff;
+    padding: 20px;
+}
+
+footer {
+    grid-column: 3 / -3;
+    background-color: #2d5ba6;
+    color: #fff;
+}
+
+/* Navigation Elements Go Here */
+
+nav ul {
+    display: flexbox;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #d53631;
+}
+
+/* Styling Elements Go Here */
+main p {
+    line-height: 1.25rem;
+}
+
+#logohero {
+    background-image: url(images/logo.jpg);
+    width: 300px;
+}
+
+/* Media Query of 960 and less goes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
