@@ -28,7 +28,21 @@
 nav {
   grid-row: 1 / 2;
   grid-column: 2 / 8;
-  background-color: rgba(41,52,161,0.3);
+  background-color: rgba(48,48,48, 0.8);
+  padding-left: 73px;
+  padding-right: 16px;
+}
+
+#logo-hero {
+  background-image: url(images/logo-hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 59px;
+  width: 68px;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  margin-left: 57px;
 }
 
 nav ul {
@@ -39,23 +53,70 @@ nav ul {
 }
 
 nav ul li {
-  width: 100%;
+  width: 30%;
   font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgb(181, 106, 20);
 }
 
 
 body {
   margin: 0px;
-  background-color: rgba(39,143,53,0.3);
+  background-color: rgba(16,11,3);
 }
 
 #main-body-content {
   grid-row: 5 / 7;
   grid-column: 2 / 6;
   margin-right: 7px;
-  background-color: rgba(182, 45, 45, 0.3);
+  background-color: rgba(117, 84, 54);
 }
 
+.title-content h2 {
+  opacity: 43%;
+}
+
+.title-content {
+  color: #fff;
+  margin-left: 143px;
+}
+
+.main-content {
+  color: #fff;
+  margin-left: 143px;
+  margin-right: 51px;
+}
+
+#photo-box {
+  display: flex;
+  gap: 47px;
+  margin-left: 134px;
+}
+
+#Gover-heaven {
+  background-image: url(images/Gover-heaven.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 121px;
+  width: 210px;
+}
+
+#cocktail {
+  background-image: url(images/cocktail.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 121px;
+  width: 157px;
+}
 
 footer {
   display: flex;
@@ -68,16 +129,30 @@ footer {
   font-family: 'Inria Serif', serif;
 }
 
+footer ul {
+  margin-top: 34px;
+}
+
 footer ul li {
   list-style-type: none;
+}
+
+footer a {
+  color: rgb(188, 126, 33);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 footer p {
   margin-right: 12px;
   text-align: center;
-  grid-column:  4 / 8;
+  margin-top: 44px;
 }
 
-.copy-link {
+#copy-link {
   text-align: center;
+  margin-top: 58px;
 }
