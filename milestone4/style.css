@@ -1,221 +1,83 @@
-#container {
-    display: grid;
-    grid-auto-rows: 150px;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+#grid-layout {
+  display: grid;
+  grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+  grid-auto-rows: minmax(0px, auto);
 }
+
+#pool-hero {
+  background-image: url(images/pool-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 393px;
+  grid-row: 1 / 5;
+  grid-column: 2 / 8;
+}
+
+#beach-hero{
+  background-image: url(images/beach-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 454px;
+  grid-row: 5 / 7;
+  grid-column: 6 / 8;
+  margin-left: -7px;
+}
+
+nav {
+  grid-row: 1 / 2;
+  grid-column: 2 / 8;
+  background-color: rgba(41,52,161,0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  margin-left: 248px;
+}
+
+nav ul li {
+  width: 100%;
+  font-size: 18px;
+}
+
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  background-color: rgba(39,143,53,0.3);
 }
 
-.side {
-  background-color: #1a1a1a;
-  grid-row: 1 / 7;
-}
-
-.left-side {
-  grid-column: 1;
-  grid-row: 1 / 10;
-}
-
-.right-side {
-  grid-column: 8;
-  grid-row: 1 / 10;
-}
-
-.flex-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 2rem;
-}
-
-/* Box-1 settings */
-
-.box-1 {
-  grid-column: 2 / 8;
-  grid-row: 1;
-  background-color: rgba(48, 48, 48, 0.8);
-  height: 80px;
-  padding: 10px 20px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 97%;
-}
-
-.nav-links {
-  display: flex;
-  gap: 37px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.3rem;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  background-color: #b98e6d;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -4px;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.logo {
-  width: 150px;
-  height: 121px;
-  background-image: url('images/logo-hero.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-/* box 2 settings */
-.box-2 {
-    grid-column: 2 / 8;
-    grid-row: 1 / 4;
-    height: auto;
-
-    background-image: url('images/pool-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* box 3 settings */
-
-.box-3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #7a563b;
-  padding: 40px;
-  gap: 20px;
-  margin-right: 56px;
+#main-body-content {
+  grid-row: 5 / 7;
   grid-column: 2 / 6;
-  grid-row: 4 / 8;
+  margin-right: 7px;
+  background-color: rgba(182, 45, 45, 0.3);
 }
 
-.info-column {
-  flex: 1;
-  color: white;
+
+footer {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  margin-right: 22px;
-  margin-left: 56px;
-}
-
-.info-column h2:first-child {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-family: 'Inria Serif', serif;
-  opacity: 67%;
-}
-
-.info-column h2:last-of-type {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-family: 'Inria Serif', serif;
-}
-
-.info-column p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.logos {
-  display: flex;
-  gap: 69px;
-  align-items: center;
-  margin-left: 9px;
-}
-
-.gourmet-logo {
-  background-image: url('images/cocktail.svg');
-  height: 174px;
-  width: 190px;
-}
-
-.vintage-logo {
-  background-image: url('images/Gover-heaven.svg');
-  height: 190px;
-  width: 209px;
-}
-
-.image-column {
-  flex: 1;
-  background-image: url('../images/beach-photo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* box 4 settings */
-.box-4 {
-    grid-column: 6 / 8;
-    grid-row: 4 / 8;
-    margin-left: -56px;
-    height: auto;
-
-    background-image: url('images/beach-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/*footer settings */
-
-.site-footer {
-  background-color: #32271D;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
   grid-column: 2 / 8;
-  grid-row: 8 / 10;
+  grid-row: 7 / 9;
+  justify-content: center;
+  gap: 175px;
+  background-color: rgb(50,39,29);
+  color: #fff;
+  font-family: 'Inria Serif', serif;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
+footer ul li {
+  list-style-type: none;
 }
 
-.footer-column {
-  flex: 1;
-  min-width: 200px;
+footer p {
+  margin-right: 12px;
+  text-align: center;
+  grid-column:  4 / 8;
 }
 
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column li {
-  margin-bottom: 6px;
+.copy-link {
+  text-align: center;
 }
