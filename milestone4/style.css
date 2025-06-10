@@ -86,6 +86,7 @@ h2 {
 p {
     color: #fff;
     font-size: 17px;
+
 }
 
 #section1 {
@@ -154,7 +155,13 @@ footer {
 }
 
 footer h5 {
-    grid-column: 2 / 4;
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    margin-top: 6px;
 }
 
 #heh {
