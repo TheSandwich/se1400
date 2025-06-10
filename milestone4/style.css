@@ -85,6 +85,7 @@ h2 {
 
 p {
     color: #fff;
+    font-size: 17px;
 }
 
 #section1 {
@@ -135,6 +136,11 @@ p {
     margin-top: 11px;
     font-size: 1.2rem;
     border: 0px;
+}
+
+.ze-button:hover {
+    color:antiquewhite;
+    background-color: #556B2F;
 }
 
 footer {
