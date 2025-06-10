@@ -53,7 +53,7 @@ nav a:hover {
     background-image: url(images/flower-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 35%;
     grid-column: 1 / -1;
     grid-row: 1 / 4;
     height: 445px;
@@ -110,6 +110,7 @@ p {
     text-align: center;
     padding-right: 100px;
     padding-left: 116px;
+    font-size: 21px;
 }
 
 #section2 h1 {
@@ -121,12 +122,35 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 317px;
-    width: 695px;
+    width: 962px;
+}
+
+.ze-button {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(10, 100, 17);
+    margin-left: 246px;
+    border-radius: 35px;
+    padding: 12px 48px;
+    margin-top: 11px;
+    font-size: 1.2rem;
+    border: 0px;
 }
 
 footer {
-    display: flex;
+    background-color: rgb(74, 90, 74);
+    color: #fff;
     grid-column: 1 / -1;
-    grid-row: 13 / 14;
+    grid-row: 5 / 6;
+    display: flex;
     justify-content: center;
+    gap: 747px;
+}
+
+footer h5 {
+    grid-column: 2 / 4;
+}
+
+#heh {
+    display: block;
 }
