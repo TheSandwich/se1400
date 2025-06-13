@@ -11,10 +11,23 @@ body {
 }
 
 nav {
-    grid-column: 1 / -1;
-    grid-row: 1 / 1;
     background-color: rgb(121, 62, 143, 0.6);
     padding-right: 229px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-logo {
+    position: relative;
+    left: 15px;
+    height: auto;
+    width: 58px;
+    grid-column: 2 / 4;
+    grid-row: 1;
 }
 
 nav ul {
@@ -33,31 +46,23 @@ nav a {
     color: #fff;
 }
 
-nav a:hover {
-    color: rgb(121, 62, 143) ;
+nav img {
+    float: left;
+
 }
 
-#nav-logo {
-    background-image: url(images/logo-hero.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    grid-column: 2 / 4;
-    grid-row: 1;
-    width: 70px;
-    height: 58px;
-    margin-left: 78px;
+nav a:hover {
+    color: rgb(121, 62, 143) ;
 }
 
 #flower-hero {
     background-image: url(images/flower-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 35%;
+    background-position: 50% 30%;
+    height: 425px;
     grid-column: 1 / -1;
     grid-row: 1 / 4;
-    height: 445px;
-    margin-bottom: -58px;
 }
 
 main {
@@ -65,14 +70,6 @@ main {
     grid-row: 4 / 5;
 }
 
-#garden-hero {
-    background-image: url(images/garden-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 36% -8%;
-    height: 241px;
-    width: 1082px;
-}
 
 main h2 {
     justify-content: left;
@@ -92,51 +89,64 @@ p {
 #section1 {
     display: flex;
     background-color: rgb(47, 47, 47);
-    padding: 56px;
-    gap: 138px;
-    margin-top: -49px;
+    gap: 84px;
+    position: relative;
+    top: -91px;
+    padding: 53px;
+}
+
+#sec1-garden {
+    position: relative;
+    left: 20px;
+    height: auto;
+    width: 298px;
 }
 
 #bandaid {
     display: block;
 }
 
+#badnaid1 {
+    display: block;
+}
+
 #section2 {
     display: flex;
     background-color: rgb(157, 157, 157);
-    margin-top: -22px;
-    padding-right: 112px;
+    padding: 21px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -92px;
+}
+
+#sec2-logo {
+    position: relative;
+    top: -26px;
+    height: auto;
+    width: 370px;
 }
 
 #section2 p {
     text-align: center;
-    padding-right: 100px;
-    padding-left: 116px;
-    font-size: 21px;
+    font-size: 24px;
 }
 
 #section2 h1 {
     text-align: center;
 }
 
-#logo-hero {
-    background-image: url(images/logo-hero.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 317px;
-    width: 962px;
-}
-
 .ze-button {
     text-align: center;
     color: #fff;
     background-color: rgb(10, 100, 17);
-    margin-left: 246px;
     border-radius: 35px;
     padding: 12px 48px;
     margin-top: 11px;
     font-size: 1.2rem;
     border: 0px;
+    display: block;
+    position: relative;
+    margin: 20px auto;
 }
 
 .ze-button:hover {
@@ -147,11 +157,11 @@ p {
 footer {
     background-color: rgb(74, 90, 74);
     color: #fff;
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
     display: flex;
     justify-content: center;
     gap: 747px;
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
 }
 
 footer h5 {
