@@ -23,11 +23,13 @@ a {
 
 #nav-logo {
     position: relative;
-    left: 15px;
+    left: 26px;
     height: auto;
     width: 58px;
     grid-column: 2 / 4;
     grid-row: 1;
+    opacity: 0.9;
+
 }
 
 nav ul {
