@@ -25,7 +25,7 @@ a {
     position: relative;
     left: 26px;
     height: auto;
-    width: 58px;
+    width: 70px;
     grid-column: 2 / 4;
     grid-row: 1;
     opacity: 0.9;
@@ -39,7 +39,7 @@ nav ul {
     justify-content: right;
     gap: 60px;
     padding-right: 49px;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
 }
 
